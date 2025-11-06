@@ -1,0 +1,8 @@
+{
+    // Disable GitHub Copilot for this workspace
+    "github.copilot.enable": false,
+    // Disable Copilot inline/autocomplete suggestions
+    "github.copilot.inlineSuggest.enable": false,
+    // Also disable VS Code's inline suggestions if you want no inline completions at all
+    "editor.inlineSuggest.enabled": false
+}
