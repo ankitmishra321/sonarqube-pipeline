@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express';
 import { getHealthResponse, getDummyResponse, getEchoResponse } from './lib/responses';
 
 const app = express();
+app.disable('x-powered-by');
 app.use(express.json());
 
 app.get('/health', (_req: Request, res: Response) => {
