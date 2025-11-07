@@ -6,22 +6,6 @@ on:
         description:  Branch to test
         required: true
         default: "main"
-<<<<<<< Updated upstream
-      node_version: 
-        description:  "Nodejs version"
-        required: true
-        default: "20"
-      install_cmd:
-        description: "Install Command"
-        required: true
-        default: "npm install"
-      test_cmd:
-        description: "Test Command"
-        required: true
-        default: "npm run test:unit"
-permissions:
-=======
->>>>>>> Stashed changes
   contents: read
 
 concurrency:
@@ -40,17 +24,6 @@ jobs:
       - name: Setup NodeJs
         uses: actions/setup-node@v4
         with:
-<<<<<<< Updated upstream
-          node-version: ${{github.event.inputs.node_version}}
-          cache: npm 
-      - name: Enable corepack
-        run: corepack enable
-      - name: Install 
-        run: ${{github.event.inputs.install_cmd}}
-
-      - name: Run tests
-        run: ${{github.event.inputs.test_cmd}}
-=======
           node-version: 20
           cache: npm 
 
@@ -65,4 +38,3 @@ jobs:
 
       - name: Integration tests
         run: npm run test
->>>>>>> Stashed changes
